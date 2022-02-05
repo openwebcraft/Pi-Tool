@@ -38,7 +38,7 @@ sleep 1
 
 apply_gtk_theme()
 {
-	git clone https://github.com/Joshaby/Adapta-Colorpack
+	git clone --branch legacy https://github.com/Joshaby/Adapta-Colorpack
 	cd Adapta-Colorpack/Pkg/usr/share/themes/Adapta-Purple-Nokto-Eta/
 
 	find . -type f -name "*.css" -exec sed -i 's/rgba\(156, 39, 176, 0.8\)/rgba\(132, 50, 155, 0.9\)/g' {} +
