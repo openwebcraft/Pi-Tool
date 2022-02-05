@@ -81,6 +81,7 @@ customize_desktop()
 	sudo apt install git
 	echo " Changing wallpaper..."
 	cp /tmp/cm_wallpaper.jpg ~/.cm_wallpaper.jpg
+	export DISPLAY=:0.0
 	pcmanfm --set-wallpaper ~/.cm_wallpaper.jpg
 	echo " Changing GTK theme..."
 	apply_gtk_theme
